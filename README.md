@@ -48,10 +48,9 @@ vermieden ([siehe Anmerkung Loxone Miniserver](#anmerkung-loxone-miniserver)).
 
 ## Daten
 
-Die Daten werden von der GVA (Gemeindeverband für Abfallbeseitigung) Seite geholt.
-Hier habe ich schon vor längerem einen Parser geschrieben, welcher die Daten von der Webseite ausliest und in ein CSV
-File speichert. Das CSV File ist eigentlich für Google Kalender gedacht.
-Hier nutze ich dasselbe CSV File, um die Daten in die API zu laden.
+Die Daten werden ursprünglich von der GVA (Gemeindeverband für Abfallbeseitigung) Seite geholt (siehe hier https://github.com/mfischelmayer/gva-abholtermin-exporter).
+Danach in einen Google Kalender importiert und freigegeben.
+Dieses Projekt liest bei jeder Abfrage die Daten aus dem Google Kalender (`ical`).
 
 ## Anmerkung Loxone Miniserver
 
@@ -65,12 +64,3 @@ Die Beleuchtung hinter den Mülltonnen leuchtet in der jeweiligen Farben der Mü
 In Österreich ist das z.b. rot für Papier, gelb für Gelber Sack, braun für Biomüll und schwarz für Restmüll
 (Schwarz leuchten ist natürlich schwierig 😅, hier wurde blau als passende Alternative gewählt).
 In meiner aktuellen Situation ist die optionale Windeltonne unumgänglich. Hier wurde die Farbe Orange gewählt.
-
-### Spiel und Zeug
-
-Für den Youtube-Kanal [Spiel und Zeug](https://www.youtube.com/spielundzeug) wurde ein Video erstellt, welches die
-Automation in Aktion zeigt.
-Das Video ist [hier](https://www.youtube.com/watch?v=3J9J9Q6Z9ZQ) zu finden.
-Außerdem gibt es einen Blogartikel
-auf [fischelmayer.at](https://fischelmayer.at/2021/07/25/muellabfuhr-automatisierung-mit-loxone/),
-welcher einen tieferen Einblick in das vollständige Projekt gibt.
